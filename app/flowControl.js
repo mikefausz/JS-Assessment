@@ -10,6 +10,22 @@ exports.flowControlAnswers = {
     //
     // otherwise the function should return the number, or false if no number
     // was provided or the value provided is not a number
-
+    // return num % 3 === 0 ? (num % 5 === 0 ? 'fizzbuzz' : 'fizz') : (num % 5 === 0 ? 'buzz' : typeof num === 'number' ? num : false );
+    if (num % 3 === 0) {
+      if (num % 5 === 0) {
+        return 'fizzbuzz';
+      } else {
+        return 'fizz';
+      }
+    }
+    else if (num % 5 === 0){
+      return 'buzz';
+    }
+    else if (typeof num !== 'number') {
+      return false;
+    }
+    else {
+      return num;
+    }
   }
 };

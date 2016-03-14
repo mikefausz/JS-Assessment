@@ -58,6 +58,7 @@ describe('objects and context', function() {
 
     var obj = new C();
 
+    // shouldn't this now equal [ 'foo: bar', 'baz: bim', 'bop: bip' ] ??
     expect(objectsAnswers.iterate(obj)).to.eql([ 'foo: bar', 'baz: bim' ]);
   });
 });
